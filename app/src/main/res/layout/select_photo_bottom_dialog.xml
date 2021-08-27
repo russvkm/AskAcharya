@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+  <LinearLayout
+      android:id="@+id/cameraAccess"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:foreground="?attr/selectableItemBackground"
+      android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/camera"
+        android:src="@drawable/camera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="@string/camera"
+        android:padding="@dimen/dialog_text_padding"
+        android:layout_margin="@dimen/card_margin"
+        android:textStyle="bold"
+        android:textSize="@dimen/more_fragment_text_size"
+        android:layout_gravity="center_horizontal"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/galleryAccess"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:foreground="?attr/selectableItemBackground"
+      android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/gallery"
+        android:src="@drawable/gallery"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="@string/gallery"
+        android:padding="@dimen/dialog_text_padding"
+        android:layout_margin="@dimen/card_margin"
+        android:textSize="@dimen/more_fragment_text_size"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+  </LinearLayout>
+</LinearLayout>

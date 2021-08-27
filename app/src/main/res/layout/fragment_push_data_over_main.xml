@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PushDataOverMain">
+
+  <LinearLayout
+      android:id="@+id/pushPhoto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:foreground="?attr/selectableItemBackground"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.118"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.045">
+
+    <ImageView
+        android:id="@+id/slidingImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dialog_text_padding"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/add_photo"
+        android:src="@drawable/add_photo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/addPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/dialog_text_padding"
+        android:text="@string/add_photo"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/more_fragment_text_size" />
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:id="@+id/addEvents"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:foreground="?attr/selectableItemBackground"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.747"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.372">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dialog_text_padding"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/add_photo"
+        android:src="@drawable/ic_baseline_event" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/eventText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/dialog_text_padding"
+        android:text="@string/event_String"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/more_fragment_text_size" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/addPandits"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:foreground="?attr/selectableItemBackground"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.118"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.362">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dialog_text_padding"
+        android:background="@drawable/pandits_round_icon"
+        android:contentDescription="@string/add_photo"
+        android:src="@drawable/person" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/dialog_text_padding"
+        android:text="@string/add_pandits"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/more_fragment_text_size" />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/finalSubmitButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:enabled="false"
+      android:padding="@dimen/final_submit_padding"
+      android:text="@string/final_summit"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.571"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.108" />
+
+  <ImageView
+      android:id="@+id/virtualImageView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="4dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.123"
+      app:layout_constraintStart_toStartOf="parent"
+      android:visibility="gone"
+      app:layout_constraintTop_toBottomOf="@+id/addPandits"
+      app:layout_constraintVertical_bias="0.896" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <stroke
+        android:width="@dimen/stroke_width_wisdom_card"
+        android:color="@color/video_card_view_outline"/>
+    <solid
+        android:color="@color/to_be_final"/>
+
+</shape>

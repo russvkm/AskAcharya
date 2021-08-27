@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PushOverWisdomFragment"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/wisdomImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="@dimen/dialog_text_padding"
+        android:background="@drawable/round_icon"
+        android:src="@drawable/person_black"
+        android:contentDescription="@string/push_over_wisdom"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/wisdomTitleTextField"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dialog_text_padding"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content"
+        android:hint="@string/wisdom_title">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/wisdomTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/wisdomArticleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dialog_text_padding"
+            android:padding="@dimen/dialog_text_padding"
+            android:gravity="start|top"
+            android:layout_weight="1"
+            android:hint="@string/wisdom_message"
+            android:background="@drawable/edit_text_background"
+            android:inputType="textMultiLine|textCapSentences|textAutoComplete" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addArticleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_gradient"
+        android:layout_margin="@dimen/dialog_text_padding"
+        android:text="@string/add_article"/>
+</LinearLayout>

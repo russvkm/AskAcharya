@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHome"
+        android:title="@string/home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/navVideo"
+        android:title="@string/videos"
+        android:icon="@drawable/play_fragment"/>
+    <item
+        android:id="@+id/nav_wisdom"
+        android:title="@string/wisdom"
+        android:icon="@drawable/wisdom"/>
+    <item
+        android:id="@+id/nav_question"
+        android:title="@string/app_name"
+        android:icon="@drawable/ask_questions"/>
+    <item
+        android:id="@+id/nav_more"
+        android:title="@string/more"
+        android:icon="@drawable/more"/>
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="@dimen/bullet_size"
+        android:layout_height="@dimen/bullet_size"
+        android:background="@drawable/bullet"
+        android:layout_marginTop="@dimen/message_text_margin"
+        android:layout_marginEnd="@dimen/message_text_margin"
+        android:layout_marginStart="@dimen/message_text_margin"/>
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/question_color"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/message_text_margin"
+        android:layout_marginEnd="@dimen/message_text_margin"
+        android:textSize="@dimen/question_text_size"/>
+</LinearLayout>

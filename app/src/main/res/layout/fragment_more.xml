@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/card_elevation"
+    tools:context=".fragment.MoreFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aboutAcharya"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/card_margin"
+                android:layout_weight="1"
+                android:elevation="@dimen/card_elevation"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_background_more">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="@dimen/card_padding"
+                        android:gravity="center"
+                        android:text="@string/about_pandit_jee"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/more_fragment_text_size"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="@dimen/image_margin"
+                        android:contentDescription="@string/about_pandit_jee"
+                        android:src="@drawable/person" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/appSetting"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_rowWeight="1"
+                android:layout_margin="@dimen/card_margin"
+                android:layout_weight="1"
+                android:elevation="@dimen/card_elevation"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/card_padding">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_background_more">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="@dimen/card_padding"
+                        android:gravity="center"
+                        android:text="@string/app_setting"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/more_fragment_text_size"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="@dimen/image_margin"
+                        android:contentDescription="@string/app_setting"
+                        android:src="@drawable/setting" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adminOnly"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/card_margin"
+                android:layout_weight="1"
+                android:elevation="@dimen/card_elevation"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_background_more">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="@dimen/card_padding"
+                        android:text="@string/admin_only"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/more_fragment_text_size"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="@dimen/image_margin"
+                        android:contentDescription="@string/admin_only"
+                        android:src="@drawable/admin" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/appInfo"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/card_margin"
+                android:layout_weight="1"
+                android:elevation="@dimen/card_elevation"
+                android:foreground="?attr/selectableItemBackground">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_background_more">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|top"
+                        android:layout_margin="@dimen/card_padding"
+                        android:text="@string/app_info"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/more_fragment_text_size"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|start"
+                        android:layout_margin="@dimen/image_margin"
+                        android:contentDescription="@string/app_info"
+                        android:src="@drawable/app_info" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_elevation"
+            android:gravity="center"
+            android:text="@string/follow_at"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/more_fragment_text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_elevation"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/icon_margin"
+                android:background="@drawable/round_icon"
+                android:contentDescription="@string/facebook"
+                android:src="@drawable/ic_facebook" />
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/icon_margin"
+                android:background="@drawable/round_icon"
+                android:contentDescription="@string/twitter"
+                android:src="@drawable/ic_twitter" />
+
+            <ImageView
+                android:id="@+id/instagram"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/icon_margin"
+                android:background="@drawable/round_icon"
+                android:contentDescription="@string/instagram"
+                android:src="@drawable/ic_instagram" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        app:adSize="LARGE_BANNER"
+        app:adUnitId="@string/add_mob_banner_id_more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

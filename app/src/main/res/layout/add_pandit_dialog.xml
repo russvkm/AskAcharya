@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/dialog_text_padding"
+    android:layout_height="match_parent">
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/addPanditJeePhoto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/pandits_round_icon"
+      android:layout_gravity="center"
+      android:layout_margin="@dimen/dialog_text_padding"
+      android:src="@drawable/person"
+      android:contentDescription="@string/add_pandits"/>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/panditJeeNameTextField"
+      android:layout_width="match_parent"
+      android:layout_margin="@dimen/dialog_text_padding"
+      android:layout_height="wrap_content"
+      android:hint="@string/add_pandit_jee_name">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/panditJeeNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/panditJeeDescriptionTextField"
+      android:layout_width="match_parent"
+      android:layout_margin="@dimen/dialog_text_padding"
+      android:layout_height="wrap_content"
+      android:hint="@string/pandit_jee_description">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/panditJeeDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/addPanditJee"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_margin="@dimen/dialog_text_padding"
+      android:text="@string/add_pandits"
+      />
+
+</LinearLayout>

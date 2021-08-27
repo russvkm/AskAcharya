@@ -1,0 +1,31 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Theme.MaterialComponents.Light.NoActionBar.Theme" parent="Base.Theme.MaterialComponents.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="detail_question">
+        <item name="android:layout_marginStart">@dimen/question_detail_start_margin</item>
+        <item name="android:layout_marginEnd">@dimen/question_detail_start_margin</item>
+        <item name="android:background">@color/question_answer_card_background</item>
+        <item name="android:padding">@dimen/padding_question_question_detail</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/question_detail_question</item>
+    </style>
+</resources>

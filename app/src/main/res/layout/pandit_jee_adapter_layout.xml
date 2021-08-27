@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/panditJeeCard"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/schedule_margin"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pandit_jee_card_background"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/panditJeeImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/pandit_jee_picture_margin"
+                android:src="@drawable/person_black" />
+
+            <TextView
+                android:id="@+id/panditJeeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/pandit_name_padding"
+                android:text="@string/name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_name_pandit" />
+
+            <TextView
+                android:id="@+id/panditJeeDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/pandit_name_padding"
+                android:text="@string/description"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/specialization_text_size" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

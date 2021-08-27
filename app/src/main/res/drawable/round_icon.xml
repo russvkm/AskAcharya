@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size
+        android:width="@dimen/round_icon_width"
+        android:height="@dimen/round_icon_length"/>
+    <stroke
+        android:width="@dimen/stroke_width"/>
+
+</shape>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHome">
+
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.russvkm.askacharya.fragment.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navHome_to_panditJeeDetail"
+            app:destination="@id/panditJeeDetail" />
+        <action
+            android:id="@+id/action_navHome_to_nav_wisdom"
+            app:destination="@id/nav_wisdom" />
+    </fragment>
+    <fragment
+        android:id="@+id/navVideo"
+        android:name="com.russvkm.askacharya.fragment.VideoFragment"
+        android:label="@string/videos"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/nav_wisdom"
+        android:name="com.russvkm.askacharya.fragment.Wisdom"
+        android:label="@string/wisdom"
+        tools:layout="@layout/fragment_wisdom" >
+        <action
+            android:id="@+id/action_nav_wisdom_to_articleDetail"
+            app:destination="@id/articleDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_question"
+        android:name="com.russvkm.askacharya.fragment.AskQuestion"
+        android:label="@string/ask"
+        tools:layout="@layout/fragment_ask_question" >
+        <action
+            android:id="@+id/action_nav_question_to_questionForm"
+            app:destination="@id/questionForm" />
+        <action
+            android:id="@+id/action_nav_question_to_userProfile"
+            app:destination="@id/userProfile" />
+        <action
+            android:id="@+id/action_nav_question_to_questionDetail"
+            app:destination="@id/questionDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_more"
+        android:name="com.russvkm.askacharya.fragment.MoreFragment"
+        android:label="@string/more"
+        tools:layout="@layout/fragment_more" >
+        <action
+            android:id="@+id/action_nav_more_to_adminOnly"
+            app:destination="@id/adminOnly" />
+        <action
+            android:id="@+id/action_nav_more_to_appSetting"
+            app:destination="@id/appSetting">
+
+        </action>
+        <action
+            android:id="@+id/action_nav_more_to_aboutAcharya"
+            app:destination="@id/aboutAcharya" />
+        <action
+            android:id="@+id/action_nav_more_to_appInfo"
+            app:destination="@id/appInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminOnly"
+        android:name="com.russvkm.askacharya.fragment.AdminOnly"
+        android:label="@string/admin_only"
+        tools:layout="@layout/fragment_admin_only" >
+        <action
+            android:id="@+id/action_adminOnly_to_pushDataOverMain2"
+            app:destination="@id/pushDataOverMain2" />
+        <action
+            android:id="@+id/action_adminOnly_to_pushOverWisdomFragment"
+            app:destination="@id/pushOverWisdomFragment" />
+        <action
+            android:id="@+id/action_adminOnly_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_adminOnly_to_replyFragment"
+            app:destination="@id/replyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appSetting"
+        android:name="com.russvkm.askacharya.fragment.AppSetting"
+        android:label="@string/app_setting"
+        tools:layout="@layout/fragment_app_setting" >
+        <action
+            android:id="@+id/action_appSetting_to_settingDetail"
+            app:destination="@id/settingDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/pushDataOverMain2"
+        android:name="com.russvkm.askacharya.fragment.PushDataOverMain"
+        android:label="@string/push_over_main"
+        tools:layout="@layout/fragment_push_data_over_main" />
+    <fragment
+        android:id="@+id/pushOverWisdomFragment"
+        android:name="com.russvkm.askacharya.fragment.PushOverWisdomFragment"
+        android:label="@string/push_over_wisdom"
+        tools:layout="@layout/fragment_push_over_wisdom" />
+    <fragment
+        android:id="@+id/settingDetail"
+        android:name="com.russvkm.askacharya.fragment.SettingDetail"
+        tools:layout="@layout/fragment_setting_detail" >
+        <argument
+            android:name="safeArgs"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/panditJeeDetail"
+        android:name="com.russvkm.askacharya.fragment.PanditJeeDetail"
+        android:label="@string/pandit_jee"
+        tools:layout="@layout/fragment_pandit_jee_detail" >
+        <argument
+            android:name="panditJeeDetailArgs"
+            app:argType="com.russvkm.askacharya.models.Pandits" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetail"
+        android:name="com.russvkm.askacharya.fragment.ArticleDetail"
+        android:label="fragment_article_detail"
+        tools:layout="@layout/fragment_article_detail" >
+        <argument
+            android:name="articleDetailArgs"
+            app:argType="com.russvkm.askacharya.models.Wisdom" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionForm"
+        android:name="com.russvkm.askacharya.fragment.QuestionForm"
+        android:label="@string/ask"
+        tools:layout="@layout/fragment_question_form" >
+        <action
+            android:id="@+id/action_questionForm_to_nav_question"
+            app:destination="@id/nav_question" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.russvkm.askacharya.fragment.UserProfile"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfile_to_nav_question"
+            app:destination="@id/nav_question" />
+        <action
+            android:id="@+id/action_userProfile_to_updateProfile"
+            app:destination="@id/updateProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.russvkm.askacharya.fragment.SignUpFragment"
+        android:label="@string/add_admin"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/replyFragment"
+        android:name="com.russvkm.askacharya.fragment.ReplyFragment"
+        android:label="@string/reply_question"
+        tools:layout="@layout/fragment_reply" />
+    <fragment
+        android:id="@+id/aboutAcharya"
+        android:name="com.russvkm.askacharya.fragment.AboutAcharya"
+        android:label="@string/about_pandit_jee"
+        tools:layout="@layout/fragment_about_acharya" />
+    <fragment
+        android:id="@+id/appInfo"
+        android:name="com.russvkm.askacharya.fragment.AppInfo"
+        android:label="@string/app_info"
+        tools:layout="@layout/fragment_app_info" />
+    <fragment
+        android:id="@+id/questionDetail"
+        android:name="com.russvkm.askacharya.fragment.QuestionDetail"
+        android:label="@string/your_answer"
+        tools:layout="@layout/fragment_question_detail" >
+        <argument
+            android:name="wholeAnswerQuestion"
+            app:argType="com.russvkm.askacharya.models.Question" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfile"
+        android:name="com.russvkm.askacharya.fragment.UpdateProfile"
+        android:label="fragment_update_profile"
+        tools:layout="@layout/fragment_update_profile" >
+        <action
+            android:id="@+id/action_updateProfile_to_userProfile"
+            app:destination="@id/userProfile" />
+        <argument
+            android:name="ListValue"
+            app:argType="string" />
+    </fragment>
+</navigation>

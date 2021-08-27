@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragment.AboutAcharya">
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/card_margin"
+        android:contentDescription="@string/about_pandit_jee"
+        android:src="@drawable/acharya" />
+
+    <TextView
+        android:id="@+id/aboutAcharyaHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/card_margin"
+        android:layout_marginEnd="@dimen/card_margin"
+        android:gravity="center"
+        android:padding="@dimen/card_margin"
+        android:scrollbars="vertical"
+        android:text="@string/brief_intro"
+        android:textColor="@color/heading_color"
+        android:textSize="@dimen/intro_heading_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/aboutAcharya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/card_margin"
+        android:layout_marginEnd="@dimen/card_margin"
+        android:paddingStart="@dimen/card_margin"
+        android:paddingEnd="@dimen/card_margin"
+        android:scrollbars="vertical"
+        android:textSize="@dimen/body_text_size" />
+</LinearLayout>

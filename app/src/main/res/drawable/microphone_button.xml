@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+       <shape
+           android:shape="oval">
+
+           <solid
+               android:color="@color/button_start_gradient_color"/>
+           <size
+               android:width="@dimen/send_button_dimen"
+               android:height="@dimen/send_button_dimen"/>
+       </shape>
+    </item>
+    <item
+        android:drawable="@drawable/microphone"/>
+</layer-list>

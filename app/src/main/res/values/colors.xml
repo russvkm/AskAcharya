@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F4068</color>
+    <color name="colorPrimaryDark">#3b9c9c</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bottom_navigation">#ffffcc</color>
+    <color name="actionBarColor">#ffffcc</color>
+    <color name="actionBarTextColor">#8F2821</color>
+    <color name="saffron">#F88407</color>
+    <color name="card_background_color">#BA2323</color>
+    <color name="button_background">#357C1B</color>
+    <color name="filled_dot_color">#FF051A</color>
+    <color name="ask_question_button_color">#DA1378F3</color>
+    <color name="stroke_color">#BC9797</color>
+    <color name="link_color">#3D6AEF</color>
+    <color name="image_color">#60042C</color>
+    <color name="button_start_gradient_color">#9ECD8C</color>
+    <color name="heading_color">#D80838</color>
+    <color name="language_selected_color">#2db34e</color>
+
+    <!--
+    <color name="colorPrimary">#1F4068</color>
+    <color name="colorPrimaryDark">#162447</color> -->
+
+
+    <color name="to_be_final">#3ea99f</color>
+    <color name="to_be_final_name_text_color_video">#ffd700</color>
+    <color name="card_background_video">#307d7e</color>
+    <color name="video_card_view_outline">#ffffc2</color>
+    <color name="latest_article_background">#46c7c7</color>
+    <color name="view_all_button_color">#ffffc2</color>
+    <color name="article_background">#46c7c7</color>
+    <color name="pandit_jee_card_outline">#ffffc2</color>
+    <color name="pandit_jee_card_background">#008080</color>
+    <color name="question_card_background">#43bfc7</color>
+    <color name="question_card_outline">#ffffc2</color>
+    <color name="profile_name_color">#ffd700</color>
+    <color name="question_color">#ffffc2</color>
+    <color name="notification_card_background">#4EE2EC</color>
+    <color name="more_fragment_color">#3b9c9c</color>
+    <color name="question_answer_card_background">#ffffc2</color>
+    <color name="box_color_main">#99d9ea</color>
+</resources>
