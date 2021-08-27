@@ -41,11 +41,11 @@ object Constants {
     const val SIGN_UP_REQUEST_CODE_CAMERA=12
     const val SIGN_UP_REQUEST_CODE_GALLERY=13
     const val BASE_URL="https://www.googleapis.com/youtube/v3/search?part=snippet&channelId="
-    const val CHANNEL_ID="UCNDDIj4waYSRKKDEbMYL-Aw"
+    const val CHANNEL_ID="***********************"
     const val API="&maxResults=50&key=AIzaSyDnx17QH39quCxRajwF56W3Q4itAmPMeV4"
     const val BASE_VIDEO_URL="https://www.youtube.com/watch?v="
     const val BASE_CHANNEL_URL="https://www.youtube.com/channel/"
-    const val FCM_TOKEN_KEY="AAAAKimBRco:APA91bFni0Qjw6JA31qWEE3wWAsdE7-_VAav6Y4IdQdGO_INTGTKV8BHEk9FfEDiWCWNj191ONF2wR6UCHNbD64k9xUf2Muza2B_1o3PeG-l8qRQGT35v72LWMXO6yC-seheDqGSTt15"
+    const val FCM_TOKEN_KEY="*********************************************************************************************************************************************"
     const val FCM_BASE_URL:String = "https://fcm.googleapis.com/fcm/send"
     const val FCM_AUTHORIZATION:String = "authorization"
     const val FCM_KEY:String = "key"
