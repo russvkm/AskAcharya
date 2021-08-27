@@ -127,7 +127,6 @@
     <string name="add_mob_banner_id_more" translatable="false">ca-app-pub-9896054191523287/8436779717</string>
     <string name="brief_intro">A Brief Intro About Acharya jee</string>
     <string name="about_acharya">Acharya Rajendra Pandey jyotish karma kanda and mansagari</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="about_app">About Application</string>
     <string name="network_not_available">Network not available</string>
     <string name="could_not_connect">Couldn\'t connect to the network</string>
