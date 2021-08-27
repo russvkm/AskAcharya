@@ -42,7 +42,7 @@ object Constants {
     const val SIGN_UP_REQUEST_CODE_GALLERY=13
     const val BASE_URL="https://www.googleapis.com/youtube/v3/search?part=snippet&channelId="
     const val CHANNEL_ID="***********************"
-    const val API="&maxResults=50&key=AIzaSyDnx17QH39quCxRajwF56W3Q4itAmPMeV4"
+    const val API="*****************************************************"
     const val BASE_VIDEO_URL="https://www.youtube.com/watch?v="
     const val BASE_CHANNEL_URL="https://www.youtube.com/channel/"
     const val FCM_TOKEN_KEY="*********************************************************************************************************************************************"
